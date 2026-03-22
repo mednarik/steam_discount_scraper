@@ -13,7 +13,6 @@ html = page.read().decode("utf-8")
 
 soup = BeautifulSoup(html, "html.parser")
 
-
 games = soup.find_all("span", class_="title")
 
 print(f"Amount: {len(games)}")
